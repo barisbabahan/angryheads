@@ -1,0 +1,162 @@
+html,
+¡ body {
+  margin: 0;
+  display: inline-block;
+}
+/* hide and show */
+.hide {
+  display: none;
+}
+.show {
+  display: grid;
+}
+.hide-block {
+  visibility: hidden;
+}
+.show-block {
+  visibility: visible;
+}
+/* header section */
+header {
+  padding: 2% 0%;
+  background-color: black;
+}
+header h1 {
+  text-align: center;
+}
+header p {
+  text-align: center;
+  color: red;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  line-height: 3;
+}
+.header {
+  font-family: "Press Start 2P", cursive;
+  color: red;
+}
+/* character */
+#character {
+  background-color: #252424;
+  padding: 2% 7%;
+}
+.char-card {
+  text-align: center;
+  padding: 2% 0% 2%;
+}
+.char-name {
+  font-size: 1.5rem;
+  color: white;
+  /* margin: 2% 0%; */
+  font-weight: 500;
+}
+.char-img {
+  margin: 5% 0%;
+  margin-left: 10%;
+}
+.select-card {
+  border: 1px solid rgb(4, 255, 4);
+}
+.go-btn {
+  text-align: center;
+  padding: 2%;
+}
+.go-btn a {
+  font-weight: 900;
+  padding: 1.5% 3%;
+}
+/* fight section */
+#fight {
+  background-color: yellow;
+  padding: 2% 5%;
+  text-align: center;
+}
+.dice {
+  width: 30%;
+  margin: 0% 5% 5%;
+}
+.dice1 {
+  width: 30%;
+  margin: 0% 5% 5%;
+}
+.spin {
+  animation: w3-spin 0.3s infinite linear;
+}
+
+.fight-card-dice {
+  padding: 20% 0% 0%;
+}
+.fight-card-img {
+  width: 55%;
+  margin: 4% 2%;
+}
+.health {
+  background-color: green;
+  height: 24px;
+  width: 100%;
+  margin-bottom: 4%;
+  position: absolute;
+}
+.fight-card-name {
+  color: red;
+  font-size: 2rem;
+  margin-right: 10%;
+  font-weight: 600;
+}
+.left-health-user {
+  background-color: red;
+  height: 24px;
+  width: 0%;
+  position: relative;
+}
+.left-health-pc {
+  background-color: red;
+  height: 24px;
+  width: 0%;
+  position: relative;
+}
+/* winner section */
+#winner {
+  text-align: center;
+  padding: 5% 0%;
+  background-color: black;
+}
+.tac {
+  width: 20%;
+  position: relative;
+  top: 50px;
+  left: -7px;
+  transform: rotate(-10deg);
+}
+.header-winner {
+  font-family: "Press Start 2P", cursive;
+  color: red;
+}
+.play-again {
+  margin-top: 2%;
+  margin-right: 2%;
+}
+/* for animation */
+.attack-animation {
+  position: relative;
+  left: 0px;
+}
+@media (max-width: 667px) {
+  .dice {
+    width: 20%;
+    margin: 0% 1% 1%;
+  }
+  .dice1 {
+    width: 20%;
+    margin: 0% 1% 1%;
+  }
+  .fight-card-dice {
+    padding: 40% 0% 0%;
+  }
+  .fight-card-img {
+    width: 50%;
+  }
+  .fight-card-dice {
+    padding: 30% 0% 0%;
+  }
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FH</title>
+    <!-- Boostrap link -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- for spinning -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- body start  -->
+    <header>
+      <h1 class="header">Welcome to Fight Headings!</h1>
+      <p>Choose your character</p>
+    </header>
+
+    <!-- character section -->
+    <section id="character">
+      <div class="row">
+        <!-- char alisoman -->
+        <div class="col-lg-3 col-sm-6 char-card aliosman">
+          <div class="char-name nick-aliosman">Garga</div>
+          <div class="char-img">
+            <img src="photos/aliosman.png" alt="" />
+          </div>
+          <div class="select-btn">
+            <a id="aliosman" class="btn btn-danger select">SELECT</a>
+            <a class="btn btn-danger cancel-aliosman hide">CANCEL</a>
+          </div>
+        </div>
+
+        <!-- char bahar -->
+        <div class="col-lg-3 col-sm-6 char-card bahar">
+          <div class="char-name nick-bahar">Kelek</div>
+          <div class="char-img">
+            <img src="photos/bahar.png" alt="" />
+          </div>
+          <div class="select-btn">
+            <a id="bahar" class="btn btn-danger select">SELECT</a>
+            <a class="btn btn-danger cancel-bahar hide">CANCEL</a>
+          </div>
+        </div>
+
+        <!-- char enis -->
+        <div class="col-lg-3 col-sm-6 char-card enis">
+          <div class="char-name nick-enis">Gil</div>
+          <div class="char-img">
+            <img src="photos/enis.png" alt="" />
+          </div>
+          <div class="select-btn">
+            <a id="enis" class="btn btn-danger select">SELECT</a>
+            <a class="btn btn-danger cancel-enis hide">CANCEL</a>
+          </div>
+        </div>
+
+        <!-- char ezgi -->
+        <div class="col-lg-3 col-sm-6 char-card ezgi">
+          <div class="char-name nick-ezgi">Kunefe</div>
+          <div class="char-img">
+            <img src="photos/ezgi.png" alt="" />
+          </div>
+          <div class="select-btn">
+            <a id="ezgi" class="btn btn-danger select">SELECT</a>
+            <a class="btn btn-danger cancel-ezgi hide">CANCEL</a>
+          </div>
+        </div>
+
+        <!-- char hakan -->
+        <div class="col-lg-3 col-sm-6 char-card hakan">
+          <div class="char-name nick-hakan">Lazanya</div>
+          <div class="char-img">
+            <img src="photos/hakan.png" alt="" />
+          </div>
+          <div class="select-btn">
+            <a id="hakan" class="btn btn-danger select">SELECT</a>
+            <a class="btn btn-danger cancel-hakan hide">CANCEL</a>
+          </div>
+        </div>
+
+        <!-- char rohat -->
+        <div class="col-lg-3 col-sm-6 char-card rohat">
+          <div class="char-name nick-rohat">
+            Paytak
+          </div>
+          <div class="char-img">
+            <img src="photos/rohat.png" alt="" />
+          </div>
+          <div class="select-btn">
+            <a id="rohat" class="btn btn-danger select">SELECT</a>
+            <a class="btn btn-danger cancel-rohat hide">CANCEL</a>
+          </div>
+        </div>
+
+        <!-- char ronahi -->
+        <div class="col-lg-3 col-sm-6 char-card ronahi">
+          <div class="char-name nick-ronahi">F1</div>
+          <div class="char-img">
+            <img src="photos/ronahi.png" alt="" />
+          </div>
+          <div class="select-btn">
+            <a id="ronahi" class="btn btn-danger select">SELECT</a>
+            <a class="btn btn-danger cancel-ronahi hide">CANCEL</a>
+          </div>
+        </div>
+
+        <!-- char yesil -->
+        <div class="col-lg-3 col-sm-6 char-card yesil">
+          <div class="char-name nick-yesil">Squat</div>
+          <div class="char-img">
+            <img src="photos/yesil.png" alt="" />
+          </div>
+          <div class="select-btn">
+            <a id="yesil" class="btn btn-danger select">SELECT</a>
+            <a class="btn btn-danger cancel-yesil hide">CANCEL</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-12 go-btn hide">
+        <a class="btn btn-lg btn-warning go-fight">Go To Fight!</a>
+      </div>
+    </section>
+
+    <!-- figth section -->
+    <section id="fight" class="hide">
+      <div class="row">
+        <!-- user -->
+        <div class="col-lg-4 col-sm-4">
+          <div class="fight-card">
+            <!-- health -->
+            <div class="health"></div>
+            <div class="left-health-user"></div>
+            <div>
+              <img
+                class="fight-card-img user-char"
+                src="photos/aliosman.png"
+                alt=""
+              />
+            </div>
+            <div class="fight-card-name user-nick">ornek</div>
+          </div>
+        </div>
+        <!-- dice -->
+        <div class="col-lg-4 col-sm-4">
+          <div class="fight-card-dice">
+            <div>
+              <img class="dice" src="dices/dice6.png" alt="" />
+              <img class="dice1" src="dices/dice6.png" alt="" />
+            </div>
+            <div>
+              <button type="button" class="btn btn-danger fight">FIGHT</button>
+            </div>
+          </div>
+        </div>
+        <!-- enemy -->
+        <div class="col-lg-4 col-sm-4">
+          <div class="fight-card">
+            <!-- health -->
+            <div class="health"></div>
+            <div class="left-health-pc"></div>
+            <div>
+              <img
+                class="fight-card-img pc-char"
+                src="photos/bahar.png"
+                alt=""
+              />
+            </div>
+            <div class="fight-card-name pc-nick">ornek</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- winner section -->
+
+    <section id="winner" class="hide">
+      <div class="row">
+        <div class="col-lg-12">
+          <img class="tac" src="photos/tac.png" alt="" /><br />
+          <img class="winner-img" src="photos/aliosman.png" alt="" />
+          <br />
+          <button type="button" class="btn btn-danger play-again">
+            Play Again
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- js link -->
+    <script src="index.js"></script>
+  </body>
+</html>
