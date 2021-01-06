@@ -159,8 +159,8 @@ function rollDice() {
 
 // figth button
 $(".fight").click(function () {
-  var dice = rollDice();
-  var dice1 = rollDice();
+  var dice = 6
+  var dice1 = 1
 
   $(".fight").fadeOut();
 
